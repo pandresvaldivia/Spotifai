@@ -1,0 +1,56 @@
+.nowPlaying {
+	display: flex;
+	gap: 0.5rem;
+}
+
+.nowPlaying-cover {
+	margin: 0;
+}
+
+.nowPlaying-cover img {
+	inline-size: 3.5rem;
+	block-size: 3.5rem;
+	vertical-align: middle;
+}
+
+.nowPlaying-details {
+	display: flex;
+	gap: 1.5rem;
+	align-items: center;
+	min-width: 0;
+}
+
+.nowPlaying-description {
+	overflow: hidden;
+}
+
+.nowPlaying-description > * {
+	display: block;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+}
+
+.nowPlaying-title {
+	font: var(--basefont-bold);
+	color: var(--white);
+	text-decoration: none;
+}
+
+.nowPlaying-artist {
+	font: var(--smallfont);
+	color: var(--gary10);
+	text-decoration: none;
+}
+
+.nowPlaying-actions {
+	display: flex;
+}
+
+.player-control {
+	font-size: 1rem;
+}
+
+.player-control:hover {
+	color: var(--white);
+}

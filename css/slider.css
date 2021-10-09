@@ -13,16 +13,27 @@
 	inline-size: 100%;
 	block-size: 0.25rem;
 	cursor: pointer;
-	background: linear-gradient(
-		90deg,
-		rgba(255, 255, 255, 0.8) var(--progress),
-		rgba(255, 255, 255, 0.2) 0
-	);
 	border-radius: 0.3125rem;
 	-webkit-border-radius: 0.3125rem;
 	-moz-border-radius: 0.3125rem;
 	-ms-border-radius: 0.3125rem;
 	-o-border-radius: 0.3125rem;
+}
+
+#progressBar.slider::-webkit-slider-runnable-track {
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.8) var(--progress),
+		rgba(255, 255, 255, 0.2) 0
+	);
+}
+
+#volume.slider::-webkit-slider-runnable-track {
+	background: linear-gradient(
+		90deg,
+		rgba(255, 255, 255, 0.8) var(--volume),
+		rgba(255, 255, 255, 0.2) 0
+	);
 }
 
 .slider::-webkit-slider-thumb {
@@ -45,10 +56,18 @@
 	display: block;
 }
 
-.slider:hover::-webkit-slider-runnable-track {
+#progressBar.slider:hover::-webkit-slider-runnable-track {
 	background: linear-gradient(
 		90deg,
 		var(--primary) var(--progress),
+		rgba(255, 255, 255, 0.2) 0
+	);
+}
+
+#volume.slider:hover::-webkit-slider-runnable-track {
+	background: linear-gradient(
+		90deg,
+		var(--primary) var(--volume),
 		rgba(255, 255, 255, 0.2) 0
 	);
 }

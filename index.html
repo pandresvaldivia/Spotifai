@@ -96,9 +96,13 @@
 		<link rel="stylesheet" href="./css/sidebar.css" />
 		<link rel="stylesheet" href="./css/ellipsis.css" />
 		<link rel="stylesheet" href="./css/slider.css" />
+		<link rel="stylesheet" href="./css/player-controls.css" />
+		<link rel="stylesheet" href="./css/player-playback.css" />
+		<link rel="stylesheet" href="./css/player-volume.css" />
+		<link rel="stylesheet" href="./css/player.css" />
+		<link rel="stylesheet" href="./css/now-playing.css" />
 	</head>
 	<body class="body">
-		<input class="slider" type="range" min="0" max="100" value="50" />
 		<div class="sidebar">
 			<header class="logo" role="banner">
 				<a href="/" aria-current="page">
@@ -228,23 +232,106 @@
 				</ul>
 			</nav>
 		</div>
-		<button class="buttonIcon" aria-label="Reproducir" title="Reproducir">
-			<i class="icon-play" aria-hidden="true"></i>
-		</button>
-		<button
-			class="buttonIcon is-white"
-			aria-label="Reproducir"
-			title="Reproducir"
-		>
-			<i class="icon-play" aria-hidden="true"></i>
-		</button>
-		<button
-			class="buttonIcon is-primary"
-			aria-label="Reproducir"
-			title="Reproducir"
-		>
-			<i class="icon-play" aria-hidden="true"></i>
-		</button>
+		<section class="player">
+			<article class="player-nowPlaying">
+				<div class="nowPlaying">
+					<figure class="nowPlaying-cover">
+						<img
+							src="./assets/images/grand-escape.png"
+							height="56"
+							width="56"
+							alt="Grand Escape feat. Tokio Miura de RADWIMPS, Toko Miura"
+						/>
+					</figure>
+					<div class="nowPlaying-details">
+						<div class="nowPlaying-description">
+							<a class="nowPlaying-title" href="#"
+								>Grand Escape (feat. Tokio Miura)</a
+							>
+							<a class="nowPlaying-artist" href="#">RADWIMPS, Toko Miura</a>
+						</div>
+						<div class="nowPlaying-actions">
+							<button
+								class="player-control"
+								aria-label="Guardar en tu biblioteca"
+								title="Guardar en tu biblioteca"
+								role="switch"
+							>
+								<i class="icon-heart" aria-hidden="true"></i>
+							</button>
+							<button
+								class="player-control"
+								aria-label="Activar ventana flotante"
+								title="Activar ventana flotante"
+								role="switch"
+							>
+								<i class="icon-minimize" aria-hidden="true"></i>
+							</button>
+						</div>
+					</div>
+				</div>
+			</article>
+			<article class="player-playerControls">
+				<div class="playerControls">
+					<div
+						class="playerControls-buttons"
+						aria-label="Controles de reproduccion"
+					>
+						<button class="buttonIcon" aria-label="Anterior" title="Anterior">
+							<i class="icon-prev" aria-hidden="true"></i>
+						</button>
+						<button
+							class="buttonIcon is-white"
+							aria-label="Reproducir"
+							title="Reproducir"
+						>
+							<i class="icon-play" aria-hidden="true"></i>
+						</button>
+						<button class="buttonIcon" aria-label="Siguiente" title="Siguiente">
+							<i class="icon-next" aria-hidden="true"></i>
+						</button>
+					</div>
+					<div class="playerPlayback">
+						<span class="playerPlayback-progressTime">01:12</span>
+						<input
+							id="progressBar"
+							class="slider"
+							type="range"
+							min="0"
+							max="100"
+							value="50"
+						/>
+						<span class="playerPlayback-progressTime">03:25</span>
+					</div>
+				</div>
+			</article>
+			<article class="player-playerVolume">
+				<div class="playerVolume">
+					<button
+						class="player-control"
+						aria-label="Silenciar"
+						aria-describedby="volume-icon"
+					>
+						<i
+							id="volume-icon"
+							class="icon-volume-high"
+							role="presentation"
+							aria-label="Volumen alto"
+						></i>
+					</button>
+					<div class="playerVolume-slider">
+						<input
+							id="volume"
+							class="slider"
+							type="range"
+							min="0"
+							max="100"
+							value="50"
+						/>
+					</div>
+				</div>
+			</article>
+		</section>
 		<script src="./js/slider.js"></script>
 	</body>
 </html>

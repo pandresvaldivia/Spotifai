@@ -1,0 +1,10 @@
+.playerVolume {
+	display: flex;
+	align-items: center;
+}
+
+.playerVolume-slider {
+	display: flex;
+	align-items: center;
+	inline-size: 6rem;
+}

@@ -30,6 +30,7 @@
 	--basefont-normal: 0.875rem/1.375rem var(--fontBase);
 	--basefont-bold: 900 0.875rem/1.375rem var(--fontBase);
 	--progress: 50%;
+	--volume: 50%;
 }
 
 .body {

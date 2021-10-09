@@ -1,18 +1,26 @@
 const root = document.querySelector(':root');
-const $slider = document.querySelector('.slider');
+const $progressBar = document.getElementById('progressBar');
+const $volume = document.getElementById('volume');
 
-$slider.addEventListener('input', handleProgressBar);
+$progressBar.addEventListener('input', handleProgressBar);
+$volume.addEventListener('input', handleVolume);
 
 function getCssVar(variable) {
 	return getComputedStyle(root).getPropertyValue(variable);
 }
 
 function setCssVar(variable, value) {
-	return root.style.setProperty(variable, value);
+	root.style.setProperty(variable, value);
 }
 
 function handleProgressBar() {
-	const progressValue = ($slider.value / $slider.max) * 100;
+	const progressValue = ($progressBar.value / $progressBar.max) * 100;
 
 	setCssVar('--progress', `${progressValue}%`);
+}
+
+function handleVolume() {
+	const volumeValue = ($volume.value / $volume.max) * 100;
+
+	setCssVar('--volume', `${volumeValue}%`);
 }

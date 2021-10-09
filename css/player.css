@@ -1,0 +1,28 @@
+.player {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	gap: 1rem;
+	box-shadow: inset 0 1px 0 var(--gray30);
+}
+
+.player > * {
+	flex: 1;
+	min-width: 0;
+}
+
+.player-control {
+	border: none;
+	padding: 0;
+	background: none;
+	color: var(--gray10);
+	font-size: 1.5rem;
+	padding-inline-start: 0.5rem;
+	padding-inline-end: 0.5rem;
+	cursor: pointer;
+}
+
+.player-playerVolume {
+	display: flex;
+	justify-content: flex-end;
+}

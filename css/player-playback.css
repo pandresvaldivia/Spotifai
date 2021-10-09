@@ -1,0 +1,9 @@
+.playerPlayback {
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+}
+
+.playerPlayback-progressTime {
+	font: var(--smallfont);
+}
