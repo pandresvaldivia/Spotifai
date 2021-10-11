@@ -36,6 +36,6 @@
 	-o-transform: scale(0.9);
 }
 
-/* .buttonIcon:hover {
+.buttonIcon[class*='is-']:hover {
 	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
-} */
+}

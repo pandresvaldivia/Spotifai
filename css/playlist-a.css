@@ -61,11 +61,18 @@
 	color: var(--white);
 	margin: 0;
 	margin-block-start: 1rem;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
 }
 
 .playlistA-artist {
 	font: var(--basefont-normal);
 	margin: 0;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
 }
 
 .playlistA:hover .playlistA-cover button,
@@ -76,4 +83,12 @@
 	-moz-transform: translateY(0);
 	-ms-transform: translateY(0);
 	-o-transform: translateY(0);
+}
+
+.playlistA .playlistA-cover button:active {
+	transform: scale(0.9);
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+	-ms-transform: scale(0.9);
+	-o-transform: scale(0.9);
 }
