@@ -1887,9 +1887,12 @@
 										<i class="icon-prev" aria-hidden="true"></i>
 									</button>
 									<button
+										id="play-button"
 										class="buttonIcon is-white"
 										aria-label="Reproducir"
 										title="Reproducir"
+										role="switch"
+										aria-checked="false"
 									>
 										<i class="icon-play" aria-hidden="true"></i>
 									</button>
@@ -1908,6 +1911,10 @@
 										<i class="icon-repeat" aria-hidden="true"></i>
 									</button>
 								</div>
+								<audio
+									id="audio"
+									src="./assets/audio/unforgettable.mp4"
+								></audio>
 								<div class="playerPlayback">
 									<span class="playerPlayback-progressTime">01:12</span>
 									<input
@@ -1915,8 +1922,7 @@
 										class="slider"
 										type="range"
 										min="0"
-										max="100"
-										value="50"
+										value="0"
 									/>
 									<span class="playerPlayback-progressTime">03:25</span>
 								</div>
@@ -1943,7 +1949,7 @@
 										type="range"
 										min="0"
 										max="100"
-										value="50"
+										value="100"
 									/>
 								</div>
 							</div>
@@ -1954,5 +1960,7 @@
 		</div>
 		<script src="./js/slider.js"></script>
 		<script src="./js/float-menu.js"></script>
+		<script src="./js/player.js"></script>
+		<script src="./js/volume.js"></script>
 	</body>
 </html>

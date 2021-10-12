@@ -39,3 +39,11 @@
 .buttonIcon[class*='is-']:hover {
 	box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.3);
 }
+
+.buttonIcon.is-active .icon-play:before {
+	content: '\e910';
+}
+
+.buttonIcon.is-active .icon-play {
+	left: 0;
+}
