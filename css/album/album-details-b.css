@@ -1,10 +1,22 @@
 .albumDetails {
 	display: flex;
+	padding-block-start: 1.5rem;
+	padding-block-end: 1.125rem;
+	padding-inline-start: 1.375rem;
+	gap: 1.5rem;
+}
+
+.albumDetails-block {
+	display: flex;
 	flex-direction: column;
-	align-items: center;
-	padding-block-start: 5.4375rem;
-	padding-block-end: 1rem;
 	gap: 1rem;
+}
+
+.albumDetails-cover {
+	block-size: 11.4375rem;
+	inline-size: 19.5rem;
+	overflow: hidden;
+	margin: 0;
 }
 
 .albumDetails-title {
@@ -14,7 +26,6 @@
 }
 
 .albumDetails-description > * {
-	text-align: center;
 	font: var(--basefont-normal);
 	color: var(--white);
 	margin: 0;
@@ -39,6 +50,7 @@
 	-moz-border-radius: 4.375rem;
 	-ms-border-radius: 4.375rem;
 	-o-border-radius: 4.375rem;
+	text-transform: uppercase;
 }
 
 .albumDetails-playButton:active {

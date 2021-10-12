@@ -1,0 +1,3 @@
+.page {
+	inline-size: calc(100vw - var(--sidebarInlineSize));
+}
