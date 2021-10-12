@@ -104,11 +104,61 @@
 		<link rel="stylesheet" href="./css/playlist-a.css" />
 		<link rel="stylesheet" href="./css/playlist-b.css" />
 		<link rel="stylesheet" href="./css/playlist-list.css" />
+		<link rel="stylesheet" href="./css/search.css" />
+		<link rel="stylesheet" href="./css/navigation.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/sticky.css" />
+		<link rel="stylesheet" href="./css/profile.css" />
 	</head>
 	<body class="body">
+		<div class="sticky">
+			<header class="header" aria-label="Barra superior">
+				<div class="navigation">
+					<button class="navigation-prev" aria-label="Volver" title="Volver">
+						<i class="icon-arrow-left" aria-hidden="true"></i>
+					</button>
+					<button
+						class="navigation-next"
+						disabled
+						aria-label="Avanzar"
+						title="Avanzar"
+					>
+						<i class="icon-arrow-right" aria-hidden="true"></i>
+					</button>
+				</div>
+				<form
+					class="search"
+					role="seacrh"
+					aria-label="Buscar por Artistas, canciones o podcasts"
+				>
+					<i class="icon-search" aria-hidden="true"></i>
+					<input type="search" placeholder="Artistas, canciones o podcasts" />
+				</form>
+				<button class="profile">
+					<figure class="profile-photo">
+						<img
+							src="./assets/images/profile.png"
+							alt="Foto del usuario Andres Valdivia"
+							height="28"
+							width="28"
+						/>
+					</figure>
+					<span class="profile-name">Andrés Valdivia Cuzcano</span>
+					<i class="icon-drop"></i>
+				</button>
+			</header>
+		</div>
 		<section class="playlistList" aria-labelledby="region1">
 			<div class="playlistList-top">
 				<h2 id="region1" class="playlistList-title">Escuchado recientemente</h2>
+				<div class="navigation">
+					<button class="navigation-prev" aria-label="Volver" title="Volver">
+						<i class="icon-arrow-left" aria-hidden="true"></i>
+					</button>
+					<button class="navigation-next" aria-label="Avanzar" title="Avanzar">
+						<i class="icon-arrow-right" aria-hidden="true"></i>
+					</button>
+				</div>
 			</div>
 			<div class="playlistList-container">
 				<article class="playlistA">
@@ -332,6 +382,14 @@
 		<section class="playlistList" aria-labelledby="region2">
 			<div class="playlistList-top">
 				<h2 id="region2" class="playlistList-title">Buenas noches</h2>
+				<div class="navigation">
+					<button class="navigation-prev" aria-label="Volver" title="Volver">
+						<i class="icon-arrow-left" aria-hidden="true"></i>
+					</button>
+					<button class="navigation-next" aria-label="Avanzar" title="Avanzar">
+						<i class="icon-arrow-right" aria-hidden="true"></i>
+					</button>
+				</div>
 			</div>
 			<div class="playlistList-container">
 				<article class="playlistB">
