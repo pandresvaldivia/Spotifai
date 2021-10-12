@@ -1,0 +1,55 @@
+.likeButton {
+	position: relative;
+	border: none;
+	padding: 0;
+	background: none;
+	color: var(--gray10);
+	font-size: 1rem;
+	padding-inline-start: 0.5rem;
+	padding-inline-end: 0.5rem;
+	cursor: pointer;
+}
+
+.likeButton:hover {
+	color: var(--white);
+}
+
+.likeButton.is-like .icon-heart:before {
+	content: '\e909';
+	color: var(--primary);
+}
+
+.icon-heart-active {
+	position: absolute;
+	opacity: 0;
+}
+
+.likeButton.is-like .icon-heart-active {
+	animation: fade-animation 0.5s linear;
+	-webkit-animation: fade-animation 0.5s linear;
+}
+
+@keyframes fade-animation {
+	30% {
+		opacity: 0;
+		transform: scale(1);
+	}
+	50% {
+		opacity: 0.5;
+		color: var(--primary);
+		transform: scale(1.5);
+		-webkit-transform: scale(1.5);
+		-moz-transform: scale(1.5);
+		-ms-transform: scale(1.5);
+		-o-transform: scale(1.5);
+	}
+	100% {
+		transform: scale(1);
+		color: var(--primary);
+		opacity: 1;
+		-webkit-transform: scale(1);
+		-moz-transform: scale(1);
+		-ms-transform: scale(1);
+		-o-transform: scale(1);
+	}
+}

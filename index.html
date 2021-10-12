@@ -113,6 +113,7 @@
 		<link rel="stylesheet" href="./css/layout.css" />
 		<link rel="stylesheet" href="./css/float-menu.css" />
 		<link rel="stylesheet" href="./css/scrollbar.css" />
+		<link rel="stylesheet" href="./css/like-button.css" />
 	</head>
 	<body class="body">
 		<div class="layout">
@@ -1845,12 +1846,13 @@
 									</div>
 									<div class="nowPlaying-actions">
 										<button
-											class="player-control"
+											class="likeButton"
 											aria-label="Guardar en tu biblioteca"
 											title="Guardar en tu biblioteca"
 											role="switch"
 											aria-checked="false"
 										>
+											<i class="icon-heart-active" aria-hidden="true"></i>
 											<i class="icon-heart" aria-hidden="true"></i>
 										</button>
 										<button
@@ -1969,5 +1971,6 @@
 		<script src="./js/float-menu.js"></script>
 		<script src="./js/player.js"></script>
 		<script src="./js/volume.js"></script>
+		<script src="./js/like-button.js"></script>
 	</body>
 </html>
