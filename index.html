@@ -111,6 +111,7 @@
 		<link rel="stylesheet" href="./css/profile.css" />
 		<link rel="stylesheet" href="./css/page.css" />
 		<link rel="stylesheet" href="./css/layout.css" />
+		<link rel="stylesheet" href="./css/float-menu.css" />
 		<link rel="stylesheet" href="./css/scrollbar.css" />
 	</head>
 	<body class="body">
@@ -132,7 +133,7 @@
 						<nav class="menu" aria-label="Menu principal">
 							<ul class="menu-list">
 								<li class="menuItem is-active">
-									<a class="link" href="/" aria-current="page">
+									<a class="link" href="./index.html" aria-current="page">
 										<i class="icon-home" aria-hidden="true"></i>
 										<span>Inicio</span>
 									</a>
@@ -284,7 +285,12 @@
 											placeholder="Artistas, canciones o podcasts"
 										/>
 									</form>
-									<button class="profile">
+									<button
+										class="profile"
+										aria-label="Ver opciones de la cuenta"
+										role="switch"
+										aria-checked="false"
+									>
 										<figure class="profile-photo">
 											<img
 												src="./assets/images/profile.png"
@@ -295,6 +301,32 @@
 										</figure>
 										<span class="profile-name">Andrés Valdivia Cuzcano</span>
 										<i class="icon-drop"></i>
+										<div class="floatMenu">
+											<ul class="floatMenu-options">
+												<li>
+													<a href="#">
+														<span>Cuenta</span>
+														<i class="icon-external-link"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Perfil</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Cámbiate a Premium</span>
+														<i class="icon-external-link"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Cerrar sesión</span>
+													</a>
+												</li>
+											</ul>
+										</div>
 									</button>
 								</header>
 							</div>
@@ -1817,6 +1849,7 @@
 											aria-label="Guardar en tu biblioteca"
 											title="Guardar en tu biblioteca"
 											role="switch"
+											aria-checked="false"
 										>
 											<i class="icon-heart" aria-hidden="true"></i>
 										</button>
@@ -1825,6 +1858,7 @@
 											aria-label="Activar ventana flotante"
 											title="Activar ventana flotante"
 											role="switch"
+											aria-checked="false"
 										>
 											<i class="icon-minimize" aria-hidden="true"></i>
 										</button>
@@ -1838,6 +1872,13 @@
 									class="playerControls-buttons"
 									aria-label="Controles de reproduccion"
 								>
+									<button
+										class="buttonIcon"
+										aria-label="Aleatorio"
+										title="Aleatorio"
+									>
+										<i class="icon-shuffle" aria-hidden="true"></i>
+									</button>
 									<button
 										class="buttonIcon"
 										aria-label="Anterior"
@@ -1858,6 +1899,13 @@
 										title="Siguiente"
 									>
 										<i class="icon-next" aria-hidden="true"></i>
+									</button>
+									<button
+										class="buttonIcon"
+										aria-label="Repetir"
+										title="Repetir"
+									>
+										<i class="icon-repeat" aria-hidden="true"></i>
 									</button>
 								</div>
 								<div class="playerPlayback">
@@ -1905,5 +1953,6 @@
 			</div>
 		</div>
 		<script src="./js/slider.js"></script>
+		<script src="./js/float-menu.js"></script>
 	</body>
 </html>
