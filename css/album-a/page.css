@@ -1,0 +1,12 @@
+.page {
+	block-size: 100%;
+	width: calc(100vw - var(--sidebarInlineSize));
+	background-image: linear-gradient(
+			181.17deg,
+			rgba(47, 47, 47, 0) -35.3%,
+			#171717 66.2%
+		),
+		url('../../assets/images/bad-bunny.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
