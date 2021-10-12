@@ -16,6 +16,10 @@
 	cursor: pointer;
 }
 
+.profile:hover {
+	background: var(--gray30);
+}
+
 .profile-photo {
 	flex-shrink: 0;
 	inline-size: 1.75rem;

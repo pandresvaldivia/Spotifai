@@ -3,3 +3,26 @@
 	margin: 0;
 	list-style: none;
 }
+
+.menu-playlists {
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+	box-shadow: inset 0 1px 0 var(--gray30);
+	padding-block-start: 0.5rem;
+}
+
+.menu-playlists::-webkit-scrollbar {
+	block-size: 0.5rem;
+	inline-size: 0.5rem;
+}
+
+.menu-playlists::-webkit-scrollbar-thumb {
+	background: var(--gray50);
+	border-radius: 25px;
+}
+
+.menu-playlists::-webkit-scrollbar-track {
+	background: var(--gray60);
+}
