@@ -49,8 +49,17 @@ function handleTimeUpdate() {
 
 	setCssVar('--progress', `${progressValue}%`);
 	printCurrentTime();
+
+	if ($audioPlayer.ended) {
+		resetPlayer();
+	}
 }
 
 function handleProgressBar() {
 	$audioPlayer.currentTime = $progressBar.value;
+}
+
+function resetPlayer() {
+	$playBtn.classList.remove('is-active');
+	$audioPlayer.currentTime = 0;
 }

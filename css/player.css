@@ -16,7 +16,7 @@
 	padding: 0;
 	background: none;
 	color: var(--gray10);
-	font-size: 1.5rem;
+	font-size: 1rem;
 	padding-inline-start: 0.5rem;
 	padding-inline-end: 0.5rem;
 	cursor: pointer;
@@ -25,4 +25,20 @@
 .player-playerVolume {
 	display: flex;
 	justify-content: flex-end;
+}
+
+.player-control:hover {
+	color: var(--white);
+}
+
+.player-control.is-normal .icon-volume-high:before {
+	content: '\ea27';
+}
+
+.player-control.is-low .icon-volume-high:before {
+	content: '\ea28';
+}
+
+.player-control.is-mute .icon-volume-high:before {
+	content: '\ea2a';
 }

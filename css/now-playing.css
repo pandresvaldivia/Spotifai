@@ -46,23 +46,3 @@
 .nowPlaying-actions {
 	display: flex;
 }
-
-.player-control {
-	font-size: 1rem;
-}
-
-.player-control:hover {
-	color: var(--white);
-}
-
-.player-control.is-mute .icon-volume-high:before {
-	content: '\ea2a';
-}
-
-.player-control.is-normal .icon-volume-high:before {
-	content: '\ea27';
-}
-
-.player-control.is-low .icon-volume-high:before {
-	content: '\ea28';
-}
