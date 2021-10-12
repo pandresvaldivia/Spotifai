@@ -1,0 +1,39 @@
+.albumTop {
+	display: flex;
+	padding-inline-start: 5.125rem;
+	block-size: 2.75rem;
+	align-items: center;
+}
+
+.albumTop-songDescription {
+	display: flex;
+	flex: 1;
+	font: var(--subtitle2);
+	text-transform: uppercase;
+}
+
+.albumTop-songDescription > * {
+	margin: 0;
+	flex: 1;
+	padding-inline-end: 0.625rem;
+	padding-inline-start: 0.625rem;
+}
+
+.albumTop-songDetails {
+	display: flex;
+}
+
+.albumTop-songDetails span {
+	display: inline-block;
+	padding-inline-start: 0.625rem;
+	box-sizing: border-box;
+	font-size: 1.125rem;
+}
+
+.albumTop-calendar {
+	inline-size: 5.625rem;
+}
+
+.albumTop-clock {
+	inline-size: 2.9375rem;
+}
