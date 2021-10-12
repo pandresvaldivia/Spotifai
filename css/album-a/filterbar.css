@@ -1,0 +1,25 @@
+.filterbar {
+	position: relative;
+	padding: 0.5rem;
+}
+
+.filterbar input {
+	border: none;
+	padding-inline-start: 1.375rem;
+	background: transparent;
+	outline: none;
+	color: var(--white);
+	inline-size: 400px;
+}
+
+.filterbar input::-webkit-input-placeholder {
+	color: var(--gray10);
+}
+
+.filterbar i {
+	position: absolute;
+	top: calc(50% - 0.4375rem);
+	font-size: 0.875rem;
+	block-size: 0.875rem;
+	color: var(--white);
+}
