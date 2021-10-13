@@ -4,7 +4,7 @@ const $next = document.getElementById('next');
 $prevBtn.addEventListener('click', goBack);
 $next.addEventListener('click', goForward);
 
-blockButton('127.0.0.1:5500');
+blockButton('pandresvaldivia.github.io/Spotifai');
 
 function goBack() {
 	if (!$prevBtn.disabled) {
