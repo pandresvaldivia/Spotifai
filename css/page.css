@@ -1,6 +1,7 @@
 .page {
 	padding-inline-end: 2rem;
 	padding-inline-start: 2rem;
+	padding-block-end: 2rem;
 }
 
 .page-block {
