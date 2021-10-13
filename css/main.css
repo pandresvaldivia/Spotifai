@@ -27,6 +27,7 @@
 	--button: 500 0.875rem/1rem var(--fontBase);
 	--subtitle2: 0.75rem / normal var(--fontBase);
 	--smallfont: 0.65625rem / normal var(--fontBase);
+	--bigfont: 700 2.5rem/3.25rem var(--fontBase);
 	--basefont-normal: 0.875rem/1.375rem var(--fontBase);
 	--basefont-bold: 900 0.875rem/1.375rem var(--fontBase);
 	--progress: 0%;

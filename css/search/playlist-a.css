@@ -1,0 +1,65 @@
+.playlistA {
+	min-inline-size: 11.625rem;
+	max-inline-size: 12.375rem;
+	aspect-ratio: 1/1;
+	overflow: hidden;
+	border-radius: 0.5rem;
+	-webkit-border-radius: 0.5rem;
+	-moz-border-radius: 0.5rem;
+	-ms-border-radius: 0.5rem;
+	-o-border-radius: 0.5rem;
+	position: relative;
+	text-decoration: none;
+	color: var(--white);
+	flex: 1;
+}
+
+.playlistA-poster {
+	margin: 0;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	transform: rotate(25deg) translate(18%, -2%);
+	-webkit-transform: rotate(25deg) translate(18%, -2%);
+	-moz-transform: rotate(25deg) translate(18%, -2%);
+	-ms-transform: rotate(25deg) translate(18%, -2%);
+	-o-transform: rotate(25deg) translate(18%, -2%);
+}
+
+.playlistA-poster img {
+	vertical-align: middle;
+}
+
+.playlistA-title {
+	margin: 1rem;
+	font: var(--headline2);
+	max-inline-size: 11.625rem;
+}
+
+.is-dark-green {
+	background: rgb(39, 133, 106);
+}
+.is-yellow {
+	background: rgb(245, 155, 35);
+}
+.is-pink {
+	background: rgb(240, 55, 165);
+}
+.is-light-purple {
+	background: rgb(180, 155, 200);
+}
+.is-gray {
+	background: rgb(119, 119, 119);
+}
+.is-sky-blue {
+	background: rgb(156, 240, 225);
+}
+.is-strong-green {
+	background: rgb(20, 138, 8);
+}
+.is-dark-orange {
+	background: rgb(186, 93, 7);
+}
+.is-light-yellow {
+	background: rgb(255, 200, 100);
+}

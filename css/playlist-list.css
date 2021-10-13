@@ -4,6 +4,12 @@
 	gap: 1rem;
 }
 
+.playlistList-wrapContainer {
+	display: flex;
+	gap: 1rem;
+	flex-wrap: wrap;
+}
+
 .playlistList-container > * {
 	flex-shrink: 0;
 }
