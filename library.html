@@ -1,0 +1,815 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotifai</title>
+
+		<!-- Favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="./assets/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="./assets/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="./assets/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="./assets/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="./assets/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="./assets/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="./assets/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="./assets/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="./assets/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="./assets/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="./assets/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="./assets/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="./assets/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="./assets/favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="./css/main.css" />
+		<link rel="stylesheet" href="./css/icons.css" />
+		<link rel="stylesheet" href="./css/button.css" />
+		<link rel="stylesheet" href="./css/logo.css" />
+		<link rel="stylesheet" href="./css/link.css" />
+		<link rel="stylesheet" href="./css/list.css" />
+		<link rel="stylesheet" href="./css/menu.css" />
+		<link rel="stylesheet" href="./css/menu-item.css" />
+		<link rel="stylesheet" href="./css/sidebar.css" />
+		<link rel="stylesheet" href="./css/ellipsis.css" />
+		<link rel="stylesheet" href="./css/slider.css" />
+		<link rel="stylesheet" href="./css/player-controls.css" />
+		<link rel="stylesheet" href="./css/player-playback.css" />
+		<link rel="stylesheet" href="./css/player-volume.css" />
+		<link rel="stylesheet" href="./css/player.css" />
+		<link rel="stylesheet" href="./css/now-playing.css" />
+		<link rel="stylesheet" href="./css/library/playlist.css" />
+		<link rel="stylesheet" href="./css/playlist-list.css" />
+		<link rel="stylesheet" href="./css/search.css" />
+		<link rel="stylesheet" href="./css/navigation.css" />
+		<link rel="stylesheet" href="./css/header.css" />
+		<link rel="stylesheet" href="./css/sticky.css" />
+		<link rel="stylesheet" href="./css/profile.css" />
+		<link rel="stylesheet" href="./css/page.css" />
+		<link rel="stylesheet" href="./css/layout.css" />
+		<link rel="stylesheet" href="./css/float-menu.css" />
+		<link rel="stylesheet" href="./css/scrollbar.css" />
+		<link rel="stylesheet" href="./css/like-button.css" />
+		<link rel="stylesheet" href="./css/library/library-playlist.css" />
+	</head>
+	<body class="body">
+		<div class="layout">
+			<div class="layout-block">
+				<div class="layout-sidebar">
+					<div class="sidebar">
+						<header class="logo" role="banner">
+							<a href="/" aria-current="page">
+								<img
+									class="logo-image"
+									src="./assets/images/spotifai-logo.png"
+									height="32"
+									width="144"
+									alt="Logo de Spotifai"
+								/>
+							</a>
+						</header>
+						<nav class="menu" aria-label="Menu principal">
+							<ul class="menu-list">
+								<li class="menuItem">
+									<a class="link" href="./index.html">
+										<i class="icon-home" aria-hidden="true"></i>
+										<span>Inicio</span>
+									</a>
+								</li>
+								<li class="menuItem">
+									<a class="link" href="./search.html">
+										<i class="icon-search" aria-hidden="true"></i>
+										<span>Buscar</span>
+									</a>
+								</li>
+								<li class="menuItem is-active">
+									<a class="link" href="./library.html" aria-current="page">
+										<i class="icon-library" aria-hidden="true"></i>
+										<span>Tu biblioteca</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu-playlists">
+							<nav class="list" aria-labelledby="library-navigation">
+								<h2 class="list-title" id="library-navigation">
+									Tu biblioteca
+								</h2>
+								<ul class="list-content">
+									<li class="list-item">
+										<a class="link" href="#">Creada para ti</a>
+									</li>
+									<li class="list-item">
+										<a class="link" href="#">Escuchado recientemente</a>
+									</li>
+									<li class="list-item">
+										<a class="link" href="#">Tus Me Gusta</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="list" aria-labelledby="playlist-navigation">
+								<h2 class="list-title" id="playlist-navigation">Playlists</h2>
+								<ul class="list-content">
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Lo mejor de lo mejor</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Para cantar en la ducha</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Sin parar</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Cumbia</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Para programar</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Reggaetón duro contra el muro</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Music</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Rock</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Trips</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Me siento bichote 🔥🥵</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Reggaetón viejito</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#"
+												>Canciones que nunca me dedicarán :'(</a
+											>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Temas viejos, pero buenos</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Crisis existencial en español</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#"
+												>Después de superar la crisis :v</a
+											>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Mágica</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">La inolvidable</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Para sufrir con clase</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Memories</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Disco</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Descubrimiento semanal</a>
+										</span>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="layout-main">
+					<div class="page">
+						<div class="sticky">
+							<div class="page-block">
+								<header class="header" aria-label="Barra superior">
+									<div class="navigation">
+										<button
+											class="navigation-prev"
+											aria-label="Volver"
+											title="Volver"
+										>
+											<i class="icon-arrow-left" aria-hidden="true"></i>
+										</button>
+										<button
+											class="navigation-next"
+											disabled
+											aria-label="Avanzar"
+											title="Avanzar"
+										>
+											<i class="icon-arrow-right" aria-hidden="true"></i>
+										</button>
+									</div>
+									<form
+										class="search"
+										role="seacrh"
+										aria-label="Buscar por Artistas, canciones o podcasts"
+									>
+										<i class="icon-search" aria-hidden="true"></i>
+										<input
+											type="search"
+											placeholder="Artistas, canciones o podcasts"
+										/>
+									</form>
+									<button
+										class="profile"
+										aria-label="Ver opciones de la cuenta"
+										role="switch"
+										aria-checked="false"
+									>
+										<figure class="profile-photo">
+											<img
+												src="./assets/images/profile.png"
+												alt="Foto del usuario Andres Valdivia"
+												height="28"
+												width="28"
+											/>
+										</figure>
+										<span class="profile-name">Andrés Valdivia Cuzcano</span>
+										<i class="icon-drop"></i>
+										<div class="floatMenu">
+											<ul class="floatMenu-options">
+												<li>
+													<a href="#">
+														<span>Cuenta</span>
+														<i class="icon-external-link"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Perfil</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Cámbiate a Premium</span>
+														<i class="icon-external-link"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Cerrar sesión</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</button>
+								</header>
+							</div>
+						</div>
+						<main class="page-block">
+							<section class="playlistList" aria-labelledby="region1">
+								<div class="playlistList-top">
+									<h2 id="region1" class="playlistList-title">Playlists</h2>
+								</div>
+								<div class="playlistList-wrapContainer">
+									<article class="libraryPlaylist">
+										<div class="libraryPlaylist-playlists">
+											<p class="libraryPlaylist-songs">
+												<span>
+													YOUNGTONES
+													<span class="libraryPlaylist-songTitle">COLD</span>
+												</span>
+												&bull;
+												<span>
+													Los Rodriguez
+													<span class="libraryPlaylist-songTitle"
+														>Mi enfermedad - Version 96</span
+													>
+												</span>
+												&bull;
+												<span>
+													Daddy Yankee
+													<span class="libraryPlaylist-songTitle">Lovumba</span>
+												</span>
+												&bull;
+												<span>
+													Bad Bunny
+													<span class="libraryPlaylist-songTitle"
+														>Sensualidad</span
+													>
+												</span>
+												&bull;
+												<span>
+													Avicii
+													<span class="libraryPlaylist-songTitle"
+														>Hey Brother</span
+													>
+												</span>
+												&bull;
+												<span>
+													Roy Orbison
+													<span class="libraryPlaylist-songTitle"
+														>Pretty Woman</span
+													>
+												</span>
+											</p>
+										</div>
+										<div class="libraryPlaylist-details">
+											<h2 class="libraryPlaylist-title">Tus me gusta</h2>
+											<p class="libraryPlaylist-data">21 tus me gusta</p>
+										</div>
+										<button
+											class="buttonIcon is-primary"
+											aria-label="Reproducir"
+											title="Reproducir"
+											role="switch"
+											aria-checked="false"
+										>
+											<i class="icon-play" aria-hidden="true"></i>
+										</button>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/hola-beats.png"
+												height="150"
+												width="150"
+												alt="Hola Beats"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+												aria-checked="false"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="Hola Beats">
+											Hola Beats
+										</h3>
+										<h4 class="playlist-artist">Artista</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/canciones-del-recuerdo.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist Canciones del recuerdo"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+												aria-checked="false"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="Canciones del recuerdo">
+											Canciones del recuerdo
+										</h3>
+										<h4 class="playlist-artist">
+											Temas inolvidables del baúl de los recuerdos.
+										</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/lofi-cafe.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist Lo-Fi Cafe"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="Lo-Fi Cafe">
+											Lo-Fi Cafe
+										</h3>
+										<h4 class="playlist-artist">
+											Chill beats for cool coffeehouse vibes
+										</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/devtalles.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist DevTalles"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="DevTalles">DevTalles</h3>
+										<h4 class="playlist-artist">Fernando Herrera</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/filosofia.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist Filosofía, Psicología, Historias"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3
+											class="playlist-title"
+											title="Filosofía, Psicología, Historias"
+										>
+											Filosofía, Psicología, Historias
+										</h3>
+										<h4 class="playlist-artist">Hernán Melana</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/entiende-tu-mente.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist Entiende Tu Mente"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="Entiende Tu Mente">
+											Entiende Tu Mente
+										</h3>
+										<h4 class="playlist-artist">Spotify Studios</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/english-with-dane.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist English with Dane"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="English with Dane">
+											English with Dane
+										</h3>
+										<h4 class="playlist-artist">Dane</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/mansion-reggaeton.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist MANSIÓN REGGAETÓN"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="MANSIÓN REGGAETÓN">
+											MANSIÓN REGGAETÓN
+										</h3>
+										<h4 class="playlist-artist">
+											Dela CALLE a la CIMA con KAROL G.
+										</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/homerun.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist Homerun"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="Homerun">Homerun</h3>
+										<h4 class="playlist-artist">Paulo Londra</h4>
+									</article>
+									<article class="playlist">
+										<figure class="playlist-cover">
+											<img
+												src="./assets/images/honestidad-brutal.png"
+												height="150"
+												width="150"
+												alt="Cover de la playlist Honestidad brutal"
+											/>
+											<button
+												class="buttonIcon is-primary"
+												aria-label="Reproducir"
+												title="Reproducir"
+												role="switch"
+											>
+												<i class="icon-play" aria-hidden="true"></i>
+											</button>
+										</figure>
+										<h3 class="playlist-title" title="Honestidad brutal">
+											Honestidad brutal
+										</h3>
+										<h4 class="playlist-artist">Andrés Calamaro</h4>
+									</article>
+								</div>
+							</section>
+						</main>
+					</div>
+				</div>
+			</div>
+			<div class="layout-block">
+				<footer class="layout-bottom">
+					<section class="player">
+						<article class="player-nowPlaying">
+							<div class="nowPlaying">
+								<figure class="nowPlaying-cover">
+									<img
+										src="./assets/images/grand-escape.png"
+										height="56"
+										width="56"
+										alt="Grand Escape feat. Tokio Miura de RADWIMPS, Toko Miura"
+									/>
+								</figure>
+								<div class="nowPlaying-details">
+									<div class="nowPlaying-description">
+										<a class="nowPlaying-title" href="#"
+											>Grand Escape (feat. Tokio Miura)</a
+										>
+										<a class="nowPlaying-artist" href="#"
+											>RADWIMPS, Toko Miura</a
+										>
+									</div>
+									<div class="nowPlaying-actions">
+										<button
+											class="likeButton"
+											aria-label="Guardar en tu biblioteca"
+											title="Guardar en tu biblioteca"
+											role="switch"
+											aria-checked="false"
+										>
+											<i class="icon-heart-active" aria-hidden="true"></i>
+											<i class="icon-heart" aria-hidden="true"></i>
+										</button>
+										<button
+											class="player-control"
+											aria-label="Activar ventana flotante"
+											title="Activar ventana flotante"
+											role="switch"
+											aria-checked="false"
+										>
+											<i class="icon-minimize" aria-hidden="true"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="player-playerControls">
+							<div class="playerControls">
+								<div
+									class="playerControls-buttons"
+									aria-label="Controles de reproduccion"
+								>
+									<button
+										class="buttonIcon"
+										aria-label="Aleatorio"
+										title="Aleatorio"
+									>
+										<i class="icon-shuffle" aria-hidden="true"></i>
+									</button>
+									<button
+										class="buttonIcon"
+										aria-label="Anterior"
+										title="Anterior"
+									>
+										<i class="icon-prev" aria-hidden="true"></i>
+									</button>
+									<button
+										id="play-button"
+										class="buttonIcon is-white"
+										aria-label="Reproducir"
+										title="Reproducir"
+										role="switch"
+										aria-checked="false"
+									>
+										<i class="icon-play" aria-hidden="true"></i>
+									</button>
+									<button
+										class="buttonIcon"
+										aria-label="Siguiente"
+										title="Siguiente"
+									>
+										<i class="icon-next" aria-hidden="true"></i>
+									</button>
+									<button
+										class="buttonIcon"
+										aria-label="Repetir"
+										title="Repetir"
+									>
+										<i class="icon-repeat" aria-hidden="true"></i>
+									</button>
+								</div>
+								<audio
+									id="audio"
+									src="./assets/audio/unforgettable.mp4"
+								></audio>
+								<div class="playerPlayback">
+									<span
+										id="audio-currentTime"
+										class="playerPlayback-progressTime"
+										>00:00</span
+									>
+									<input
+										id="progressBar"
+										class="slider"
+										type="range"
+										min="0"
+										value="0"
+									/>
+									<span id="audio-limit" class="playerPlayback-progressTime"
+										>00:00</span
+									>
+								</div>
+							</div>
+						</article>
+						<article class="player-playerVolume">
+							<div class="playerVolume">
+								<button
+									id="volume-button"
+									class="player-control"
+									aria-label="Silenciar"
+									aria-describedby="volume-icon"
+								>
+									<i
+										id="volume-icon"
+										class="icon-volume-high"
+										role="presentation"
+										aria-label="Volumen alto"
+									></i>
+								</button>
+								<div class="playerVolume-slider">
+									<input
+										id="volume"
+										class="slider"
+										type="range"
+										min="0"
+										max="100"
+										value="100"
+									/>
+								</div>
+							</div>
+						</article>
+					</section>
+				</footer>
+			</div>
+		</div>
+		<script src="./js/slider.js"></script>
+		<script src="./js/float-menu.js"></script>
+		<script src="./js/player.js"></script>
+		<script src="./js/volume.js"></script>
+		<script src="./js/like-button.js"></script>
+	</body>
+</html>

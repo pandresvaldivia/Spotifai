@@ -1,0 +1,72 @@
+.libraryPlaylist {
+	inline-size: 378px;
+	background: linear-gradient(149.46deg, #450af5, #8e8ee5 99.16%);
+	border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+	position: relative;
+	cursor: pointer;
+	padding: 1.25rem;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: 1.25rem;
+	justify-content: flex-end;
+}
+
+.libraryPlaylist-songs {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+	color: var(--white);
+}
+
+.libraryPlaylist-songTitle {
+	opacity: 0.7;
+}
+
+.libraryPlaylist-details {
+	color: var(--white);
+}
+
+.libraryPlaylist-details > * {
+	margin: 0;
+}
+
+.libraryPlaylist-title {
+	font: var(--headline1);
+	margin-block-end: 0.25rem;
+}
+
+.libraryPlaylist button {
+	position: absolute;
+	right: 0.5rem;
+	bottom: 0.5rem;
+	block-size: 48px;
+	inline-size: 48px;
+	font-size: 1.2rem;
+	opacity: 0;
+	will-change: opacity, transform;
+	transform: translateY(0.5rem);
+	-webkit-transform: translateY(0.5rem);
+	-moz-transform: translateY(0.5rem);
+	-ms-transform: translateY(0.5rem);
+	-o-transform: translateY(0.5rem);
+	transition: opacity 0.3s, transform 0.3s;
+	-webkit-transition: opacity 0.3s, trans;
+	-moz-transition: opacity 0.3s, trans;
+	-ms-transition: opacity 0.3s, trans;
+	-o-transition: opacity 0.3s, trans;
+}
+
+.libraryPlaylist:hover button {
+	opacity: 1;
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+}
