@@ -1,7 +1,9 @@
-const $likeBtn = document.querySelector('.likeButton');
+const $layout = document.querySelector('.layout');
 
-$likeBtn.addEventListener('click', likeSong);
+$layout.addEventListener('click', likeSong);
 
-function likeSong() {
-	this.classList.toggle('is-like');
+function likeSong(e) {
+	if (e.target.classList.contains('icon-heart-active')) {
+		e.target.parentElement.classList.toggle('is-like');
+	}
 }

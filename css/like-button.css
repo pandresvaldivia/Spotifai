@@ -5,9 +5,10 @@
 	background: none;
 	color: var(--gray10);
 	font-size: 1rem;
-	padding-inline-start: 0.5rem;
-	padding-inline-end: 0.5rem;
+	margin-inline-start: 0.5rem;
+	margin-inline-end: 0.5rem;
 	cursor: pointer;
+	block-size: 1rem;
 }
 
 .likeButton:hover {
