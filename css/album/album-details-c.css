@@ -1,0 +1,40 @@
+.albumDetails {
+	display: flex;
+	padding-block-start: 1.3125rem;
+	padding-block-end: 1.125rem;
+	padding-inline-start: 1.375rem;
+	gap: 0.625rem;
+}
+
+.albumDetails-block {
+	display: flex;
+	flex-direction: column;
+	gap: 0.625rem;
+	align-items: flex-start;
+	justify-content: flex-end;
+}
+
+.albumDetails-block > span {
+	font: var(--smallfont);
+	text-transform: uppercase;
+	color: var(--white);
+}
+
+.albumDetails-cover {
+	block-size: 14.5rem;
+	inline-size: 14.5rem;
+	overflow: hidden;
+	margin: 0;
+}
+
+.albumDetails-title {
+	font: var(--headline1);
+	color: var(--white);
+	margin: 0;
+}
+
+.albumDetails-artist {
+	font: var(--basefont-normal);
+	color: var(--white);
+	margin: 0;
+}

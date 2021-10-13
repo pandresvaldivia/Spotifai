@@ -1,0 +1,16 @@
+.album {
+	padding-block-start: 1.5rem;
+	padding-inline-end: 1rem;
+	padding-inline-start: 1.5rem;
+}
+
+.album-playlist {
+	overflow: auto;
+	block-size: calc(100vh - 467px);
+}
+
+.album > button {
+	block-size: 56px;
+	inline-size: 56px;
+	font-size: 1.225rem;
+}

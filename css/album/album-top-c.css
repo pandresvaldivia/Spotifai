@@ -1,0 +1,40 @@
+.albumTop {
+	display: flex;
+	padding-inline-end: 0.625rem;
+	padding-inline-start: 0.625rem;
+	padding-block-end: 1rem;
+	padding-block-start: 1rem;
+	align-items: center;
+	border-block-end: 1px solid var(--gray10);
+	gap: 0.5rem;
+}
+
+.albumTop-number {
+	inline-size: 1.875rem;
+	text-align: center;
+	font: var(--smallfont);
+}
+
+.albumTop-number p {
+	margin: 0;
+}
+
+.albumTop-songDescription {
+	display: flex;
+	flex: 1;
+}
+
+.albumTop-songDescription > * {
+	margin: 0;
+	flex: 1;
+	font: var(--smallfont);
+}
+
+.albumTop-release {
+	text-transform: uppercase;
+}
+
+.albumTop-songDetails {
+	inline-size: 5rem;
+	block-size: 1.125rem;
+}

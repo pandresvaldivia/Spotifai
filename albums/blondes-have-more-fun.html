@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Spotifai</title>
+
+		<!-- Favicon -->
+		<link
+			rel="apple-touch-icon"
+			sizes="57x57"
+			href="../assets/favicon/apple-icon-57x57.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="60x60"
+			href="../assets/favicon/apple-icon-60x60.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="72x72"
+			href="../assets/favicon/apple-icon-72x72.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="76x76"
+			href="../assets/favicon/apple-icon-76x76.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="114x114"
+			href="../assets/favicon/apple-icon-114x114.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="120x120"
+			href="../assets/favicon/apple-icon-120x120.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="144x144"
+			href="../assets/favicon/apple-icon-144x144.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="152x152"
+			href="../assets/favicon/apple-icon-152x152.png"
+		/>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="../assets/favicon/apple-icon-180x180.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="192x192"
+			href="../assets/favicon/android-icon-192x192.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="../assets/favicon/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="96x96"
+			href="../assets/favicon/favicon-96x96.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="../assets/favicon/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="../assets/favicon/manifest.json" />
+		<meta name="msapplication-TileColor" content="#ffffff" />
+		<meta
+			name="msapplication-TileImage"
+			content="../assets/favicon/ms-icon-144x144.png"
+		/>
+		<meta name="theme-color" content="#ffffff" />
+
+		<!-- Styles -->
+		<link rel="stylesheet" href="../css/main.css" />
+		<link rel="stylesheet" href="../css/icons.css" />
+		<link rel="stylesheet" href="../css/button.css" />
+		<link rel="stylesheet" href="../css/logo.css" />
+		<link rel="stylesheet" href="../css/link.css" />
+		<link rel="stylesheet" href="../css/list.css" />
+		<link rel="stylesheet" href="../css/menu.css" />
+		<link rel="stylesheet" href="../css/menu-item.css" />
+		<link rel="stylesheet" href="../css/sidebar.css" />
+		<link rel="stylesheet" href="../css/ellipsis.css" />
+		<link rel="stylesheet" href="../css/slider.css" />
+		<link rel="stylesheet" href="../css/player-controls.css" />
+		<link rel="stylesheet" href="../css/player-playback.css" />
+		<link rel="stylesheet" href="../css/player-volume.css" />
+		<link rel="stylesheet" href="../css/player.css" />
+		<link rel="stylesheet" href="../css/now-playing.css" />
+		<link rel="stylesheet" href="../css/playlist-a.css" />
+		<link rel="stylesheet" href="../css/playlist-b.css" />
+		<link rel="stylesheet" href="../css/playlist-list.css" />
+		<link rel="stylesheet" href="../css/search.css" />
+		<link rel="stylesheet" href="../css/navigation.css" />
+		<link rel="stylesheet" href="../css/header.css" />
+		<link rel="stylesheet" href="../css/sticky.css" />
+		<link rel="stylesheet" href="../css/profile.css" />
+		<link rel="stylesheet" href="../css/album/page-b.css" />
+		<link rel="stylesheet" href="../css/layout.css" />
+		<link rel="stylesheet" href="../css/float-menu.css" />
+		<link rel="stylesheet" href="../css/scrollbar.css" />
+		<link rel="stylesheet" href="../css/like-button.css" />
+		<link rel="stylesheet" href="../css/album/album-details-c.css" />
+		<link rel="stylesheet" href="../css/album/album-top-c.css" />
+		<link rel="stylesheet" href="../css/album/album-song.css" />
+		<link rel="stylesheet" href="../css/album/album-c.css" />
+	</head>
+	<body class="body">
+		<div class="layout">
+			<div class="layout-block">
+				<div class="layout-sidebar">
+					<div class="sidebar">
+						<header class="logo" role="banner">
+							<a href="/" aria-current="page">
+								<img
+									class="logo-image"
+									src="../assets/images/spotifai-logo.png"
+									height="32"
+									width="144"
+									alt="Logo de Spotifai"
+								/>
+							</a>
+						</header>
+						<nav class="menu" aria-label="Menu principal">
+							<ul class="menu-list">
+								<li class="menuItem is-active">
+									<a class="link" href="../index.html" aria-current="page">
+										<i class="icon-home" aria-hidden="true"></i>
+										<span>Inicio</span>
+									</a>
+								</li>
+								<li class="menuItem">
+									<a class="link" href="/">
+										<i class="icon-search" aria-hidden="true"></i>
+										<span>Buscar</span>
+									</a>
+								</li>
+								<li class="menuItem">
+									<a class="link" href="/">
+										<i class="icon-library" aria-hidden="true"></i>
+										<span>Tu biblioteca</span>
+									</a>
+								</li>
+							</ul>
+						</nav>
+						<div class="menu-playlists">
+							<nav class="list" aria-labelledby="library-navigation">
+								<h2 class="list-title" id="library-navigation">
+									Tu biblioteca
+								</h2>
+								<ul class="list-content">
+									<li class="list-item">
+										<a class="link" href="#">Creada para ti</a>
+									</li>
+									<li class="list-item">
+										<a class="link" href="#">Escuchado recientemente</a>
+									</li>
+									<li class="list-item">
+										<a class="link" href="#">Tus Me Gusta</a>
+									</li>
+								</ul>
+							</nav>
+							<nav class="list" aria-labelledby="playlist-navigation">
+								<h2 class="list-title" id="playlist-navigation">Playlists</h2>
+								<ul class="list-content">
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Lo mejor de lo mejor</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Para cantar en la ducha</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Sin parar</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Cumbia</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Para programar</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Reggaetón duro contra el muro</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Music</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Rock</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Trips</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Mágica</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">La inolvidable</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Para sufrir con clase</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Memories</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Disco</a>
+										</span>
+									</li>
+									<li class="list-item">
+										<span class="ellipsis">
+											<a class="link" href="#">Descubrimiento semanal</a>
+										</span>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+				<div class="layout-main">
+					<div class="page">
+						<div class="sticky">
+							<div class="page-block">
+								<header class="header" aria-label="Barra superior">
+									<div class="navigation">
+										<button
+											class="navigation-prev"
+											aria-label="Volver"
+											title="Volver"
+										>
+											<i class="icon-arrow-left" aria-hidden="true"></i>
+										</button>
+										<button
+											class="navigation-next"
+											disabled
+											aria-label="Avanzar"
+											title="Avanzar"
+										>
+											<i class="icon-arrow-right" aria-hidden="true"></i>
+										</button>
+									</div>
+									<form
+										class="search"
+										role="search"
+										aria-label="Buscar por Artistas, canciones o podcasts"
+									>
+										<i class="icon-search" aria-hidden="true"></i>
+										<input
+											type="search"
+											placeholder="Artistas, canciones o podcasts"
+										/>
+									</form>
+									<button
+										class="profile"
+										aria-label="Ver opciones de la cuenta"
+										role="switch"
+										aria-checked="false"
+									>
+										<figure class="profile-photo">
+											<img
+												src="../assets/images/profile.png"
+												alt="Foto del usuario Andres Valdivia"
+												height="28"
+												width="28"
+											/>
+										</figure>
+										<span class="profile-name">Andrés Valdivia Cuzcano</span>
+										<i class="icon-drop"></i>
+										<div class="floatMenu">
+											<ul class="floatMenu-options">
+												<li>
+													<a href="#">
+														<span>Cuenta</span>
+														<i class="icon-external-link"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Perfil</span>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Cámbiate a Premium</span>
+														<i class="icon-external-link"></i>
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<span>Cerrar sesión</span>
+													</a>
+												</li>
+											</ul>
+										</div>
+									</button>
+								</header>
+							</div>
+						</div>
+						<section class="albumDetails">
+							<div class="albumDetails-block">
+								<figure class="albumDetails-cover">
+									<img
+										src="../assets/images/blondes-have-more-fun.png"
+										height="232"
+										width="232"
+										alt="Cover del album Blondes have more fun"
+									/>
+								</figure>
+							</div>
+							<div class="albumDetails-block">
+								<span>Playlist</span>
+								<h2 class="albumDetails-title">Blondes have more fun</h2>
+								<h3 class="albumDetails-artist">Rod Stewart</h3>
+							</div>
+						</section>
+						<section class="album">
+							<button
+								class="buttonIcon is-primary"
+								aria-label="Reproducir album Blondes have more fun"
+								title="Reproducir album Blondes have more fun"
+							>
+								<i class="icon-play" aria-hidden="true"></i>
+							</button>
+							<div class="albumTop">
+								<div class="albumTop-number">
+									<p>#</p>
+								</div>
+								<div class="albumTop-songDescription">
+									<p>Título</p>
+									<p>Álbum</p>
+									<p class="albumTop-release">Agregado el</p>
+								</div>
+								<div class="albumTop-songDetails">
+									<i class="icon-clock" aria-hidden="true"></i>
+								</div>
+							</div>
+							<div class="album-playlist">
+								<article class="albumSong">
+									<div class="albumSong-description">
+										<div class="albumSong-title">
+											<figure class="albumSong-thumbnail">
+												<img
+													src="../assets/images/blondes-have-more-fun.png"
+													alt="Cover del album Blondes have more fun"
+												/>
+											</figure>
+											<div class="albumSong-titleName">
+												<h4>Grand Escape</h4>
+												<h5>Rod Stewart</h5>
+											</div>
+										</div>
+										<h4 class="albumSong-album">Blondes have more fun</h4>
+										<h4 class="albumSong-release">3 de jul. de 2019</h4>
+									</div>
+									<div class="albumSong-details">
+										<p class="albumSong-duration">3:25</p>
+									</div>
+								</article>
+							</div>
+						</section>
+						<main class="page-block"></main>
+					</div>
+				</div>
+			</div>
+			<div class="layout-block">
+				<footer class="layout-bottom">
+					<section class="player">
+						<article class="player-nowPlaying">
+							<div class="nowPlaying">
+								<figure class="nowPlaying-cover">
+									<img
+										src="../assets/images/grand-escape.png"
+										height="56"
+										width="56"
+										alt="Grand Escape feat. Tokio Miura de RADWIMPS, Toko Miura"
+									/>
+								</figure>
+								<div class="nowPlaying-details">
+									<div class="nowPlaying-description">
+										<a class="nowPlaying-title" href="#"
+											>Grand Escape (feat. Tokio Miura)</a
+										>
+										<a class="nowPlaying-artist" href="#"
+											>RADWIMPS, Toko Miura</a
+										>
+									</div>
+									<div class="nowPlaying-actions">
+										<button
+											class="likeButton"
+											aria-label="Guardar en tu biblioteca"
+											title="Guardar en tu biblioteca"
+											role="switch"
+											aria-checked="false"
+										>
+											<i class="icon-heart-active" aria-hidden="true"></i>
+											<i class="icon-heart" aria-hidden="true"></i>
+										</button>
+										<button
+											class="player-control"
+											aria-label="Activar ventana flotante"
+											title="Activar ventana flotante"
+											role="switch"
+											aria-checked="false"
+										>
+											<i class="icon-minimize" aria-hidden="true"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</article>
+						<article class="player-playerControls">
+							<div class="playerControls">
+								<div
+									class="playerControls-buttons"
+									aria-label="Controles de reproduccion"
+								>
+									<button
+										class="buttonIcon"
+										aria-label="Aleatorio"
+										title="Aleatorio"
+									>
+										<i class="icon-shuffle" aria-hidden="true"></i>
+									</button>
+									<button
+										class="buttonIcon"
+										aria-label="Anterior"
+										title="Anterior"
+									>
+										<i class="icon-prev" aria-hidden="true"></i>
+									</button>
+									<button
+										id="play-button"
+										class="buttonIcon is-white"
+										aria-label="Reproducir"
+										title="Reproducir"
+										role="switch"
+										aria-checked="false"
+									>
+										<i class="icon-play" aria-hidden="true"></i>
+									</button>
+									<button
+										class="buttonIcon"
+										aria-label="Siguiente"
+										title="Siguiente"
+									>
+										<i class="icon-next" aria-hidden="true"></i>
+									</button>
+									<button
+										class="buttonIcon"
+										aria-label="Repetir"
+										title="Repetir"
+									>
+										<i class="icon-repeat" aria-hidden="true"></i>
+									</button>
+								</div>
+								<audio
+									id="audio"
+									src="../assets/audio/unforgettable.mp4"
+								></audio>
+								<div class="playerPlayback">
+									<span
+										id="audio-currentTime"
+										class="playerPlayback-progressTime"
+										>00:00</span
+									>
+									<input
+										id="progressBar"
+										class="slider"
+										type="range"
+										min="0"
+										value="0"
+									/>
+									<span id="audio-limit" class="playerPlayback-progressTime"
+										>00:00</span
+									>
+								</div>
+							</div>
+						</article>
+						<article class="player-playerVolume">
+							<div class="playerVolume">
+								<button
+									id="volume-button"
+									class="player-control"
+									aria-label="Silenciar"
+									aria-describedby="volume-icon"
+								>
+									<i
+										id="volume-icon"
+										class="icon-volume-high"
+										role="presentation"
+										aria-label="Volumen alto"
+									></i>
+								</button>
+								<div class="playerVolume-slider">
+									<input
+										id="volume"
+										class="slider"
+										type="range"
+										min="0"
+										max="100"
+										value="100"
+									/>
+								</div>
+							</div>
+						</article>
+					</section>
+				</footer>
+			</div>
+		</div>
+		<script src="../js/slider.js"></script>
+		<script src="../js/float-menu.js"></script>
+		<script src="../js/player.js"></script>
+		<script src="../js/volume.js"></script>
+		<script src="../js/like-button.js"></script>
+	</body>
+</html>
