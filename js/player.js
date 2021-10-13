@@ -22,7 +22,7 @@ function handleAudio() {
 }
 
 function setDuration() {
-	progressBar.max = $audioPlayer.duration;
+	$progressBar.max = $audioPlayer.duration;
 }
 
 function printDuration() {
