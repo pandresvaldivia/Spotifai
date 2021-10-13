@@ -1,5 +1,4 @@
 .page {
-	inline-size: calc(100vw - var(--sidebarInlineSize));
 	background-image: linear-gradient(
 			181.17deg,
 			rgba(47, 47, 47, 0) -35.3%,

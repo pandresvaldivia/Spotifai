@@ -23,6 +23,7 @@
 	block-size: calc(100vh - var(--playerSize));
 	overflow: auto;
 	min-block-size: var(--minBlockSize);
+	flex: 1;
 }
 
 .layout-bottom {

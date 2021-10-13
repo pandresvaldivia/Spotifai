@@ -2,11 +2,15 @@
 	display: flex;
 	padding-inline-end: 0.625rem;
 	padding-inline-start: 0.625rem;
-	padding-block-end: 1rem;
-	padding-block-start: 1rem;
+	padding-block-end: 0.5rem;
+	padding-block-start: 0.5rem;
 	align-items: center;
 	border-block-end: 1px solid var(--gray10);
 	gap: 0.5rem;
+	position: sticky;
+	top: 3.875rem;
+	z-index: 1;
+	background: var(--gray50);
 }
 
 .albumTop-number {
