@@ -148,6 +148,7 @@
 		<link rel="stylesheet" href="../css/navigation.css" />
 		<link rel="stylesheet" href="../css/header.css" />
 		<link rel="stylesheet" href="../css/sticky.css" />
+		<link rel="stylesheet" href="../css/page.css" />
 		<link rel="stylesheet" href="../css/profile.css" />
 		<link rel="stylesheet" href="../css/layout.css" />
 		<link rel="stylesheet" href="../css/float-menu.css" />
@@ -160,914 +161,872 @@
 	</head>
 	<body class="body">
 		<div class="layout">
-			<div class="layout-block">
-				<div class="layout-sidebar">
-					<div class="sidebar">
-						<header class="logo" role="banner">
-							<a href="../index.html" aria-current="page">
-								<img
-									class="logo-image"
-									src="../assets/images/spotifai-logo.png"
-									height="32"
-									width="144"
-									alt="Logo de Spotifai"
-								/>
+			<div class="sidebar">
+				<header class="logo" role="banner">
+					<a href="../index.html" aria-current="page">
+						<img
+							class="logo-image"
+							src="../assets/images/spotifai-logo.png"
+							height="32"
+							width="144"
+							alt="Logo de Spotifai"
+						/>
+					</a>
+				</header>
+				<nav class="menu" aria-label="Menu principal">
+					<ul class="menu-list">
+						<li class="menuItem">
+							<a class="link" href="../index.html" aria-current="page">
+								<i class="icon-home" aria-hidden="true"></i>
+								<span>Inicio</span>
 							</a>
-						</header>
-						<nav class="menu" aria-label="Menu principal">
-							<ul class="menu-list">
-								<li class="menuItem">
-									<a class="link" href="../index.html" aria-current="page">
-										<i class="icon-home" aria-hidden="true"></i>
-										<span>Inicio</span>
-									</a>
-								</li>
-								<li class="menuItem">
-									<a class="link" href="../search.html">
-										<i class="icon-search" aria-hidden="true"></i>
-										<span>Buscar</span>
-									</a>
-								</li>
-								<li class="menuItem">
-									<a class="link" href="../library.html">
-										<i class="icon-library" aria-hidden="true"></i>
-										<span>Tu biblioteca</span>
-									</a>
-								</li>
-							</ul>
-						</nav>
-						<div class="menu-playlists">
-							<nav class="list" aria-labelledby="library-navigation">
-								<h2 class="list-title" id="library-navigation">
-									Tu biblioteca
-								</h2>
-								<ul class="list-content">
-									<li class="list-item">
-										<a
-											class="link"
-											title="Creada para ti"
-											href="./el-tultimo-tour.html"
-											>Creada para ti</a
-										>
-									</li>
-									<li class="list-item">
-										<a
-											class="link"
-											title="Escuchado recientemente"
-											href="./homerun.html"
-											>Escuchado recientemente</a
-										>
-									</li>
-									<li class="list-item">
-										<a
-											class="link"
-											title="Tus Me Gusta"
-											href="./blondes-have-more-fun.html"
-											>Tus Me Gusta</a
-										>
-									</li>
-								</ul>
-							</nav>
-							<nav class="list" aria-labelledby="playlist-navigation">
-								<h2 class="list-title" id="playlist-navigation">Playlists</h2>
-								<ul class="list-content">
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Lo mejor de lo mejor"
-												href="./el-tultimo-tour.html"
-												>Lo mejor de lo mejor</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Para cantar en la ducha"
-												href="./homerun.html"
-												>Para cantar en la ducha</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Sin parar"
-												href="./blondes-have-more-fun.html"
-												>Sin parar</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Cumbia"
-												href="./el-tultimo-tour.html"
-												>Cumbia</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Para programar"
-												href="./homerun.html"
-												>Para programar</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Reggaetón duro contra el muro"
-												href="./blondes-have-more-fun.html"
-												>Reggaetón duro contra el muro</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Music"
-												href="./el-tultimo-tour.html"
-												>Music</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a class="link" title="Rock" href="./homerun.html"
-												>Rock</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Trips"
-												href="./blondes-have-more-fun.html"
-												>Trips</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Me siento bichote 🔥🥵"
-												href="./el-tultimo-tour.html"
-												>Me siento bichote 🔥🥵</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Reggaetón viejito"
-												href="./homerun.html"
-												>Reggaetón viejito</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Canciones que nunca me dedicarán :'("
-												href="./blondes-have-more-fun.html"
-												>Canciones que nunca me dedicarán :'(</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Temas viejos, pero buenos"
-												href="./el-tultimo-tour.html"
-												>Temas viejos, pero buenos</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Crisis existencial en español"
-												href="./homerun.html"
-												>Crisis existencial en español</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Después de superar la crisis :v"
-												href="./blondes-have-more-fun.html"
-												>Después de superar la crisis :v</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Mágica"
-												href="./el-tultimo-tour.html"
-												>Mágica</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="La inolvidable"
-												href="./homerun.html"
-												>La inolvidable</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Para sufrir con clase"
-												href="./blondes-have-more-fun.html"
-												>Para sufrir con clase</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Memories"
-												href="./el-tultimo-tour.html"
-												>Memories</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a class="link" title="Disco" href="./homerun.html"
-												>Disco</a
-											>
-										</span>
-									</li>
-									<li class="list-item">
-										<span class="ellipsis">
-											<a
-												class="link"
-												title="Descubrimiento semanal"
-												href="./blondes-have-more-fun.html"
-												>Descubrimiento semanal</a
-											>
-										</span>
-									</li>
-								</ul>
-							</nav>
-						</div>
-					</div>
-				</div>
-				<div class="layout-main">
-					<div class="page">
-						<div class="sticky">
-							<div class="page-block">
-								<header class="header" aria-label="Barra superior">
-									<div class="navigation">
-										<button
-											id="prev"
-											class="navigation-prev"
-											aria-label="Volver"
-											title="Volver"
-										>
-											<i class="icon-arrow-left" aria-hidden="true"></i>
-										</button>
-										<button
-											id="next"
-											class="navigation-next"
-											aria-label="Avanzar"
-											title="Avanzar"
-										>
-											<i class="icon-arrow-right" aria-hidden="true"></i>
-										</button>
-									</div>
-									<form
-										class="search"
-										role="search"
-										aria-label="Buscar por Artistas, canciones o podcasts"
+						</li>
+						<li class="menuItem">
+							<a class="link" href="../search.html">
+								<i class="icon-search" aria-hidden="true"></i>
+								<span>Buscar</span>
+							</a>
+						</li>
+						<li class="menuItem">
+							<a class="link" href="../library.html">
+								<i class="icon-library" aria-hidden="true"></i>
+								<span>Tu biblioteca</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="menu-playlists">
+					<nav class="list" aria-labelledby="library-navigation">
+						<h2 class="list-title" id="library-navigation">Tu biblioteca</h2>
+						<ul class="list-content">
+							<li class="list-item">
+								<a
+									class="link"
+									title="Creada para ti"
+									href="./el-tultimo-tour.html"
+									>Creada para ti</a
+								>
+							</li>
+							<li class="list-item">
+								<a
+									class="link"
+									title="Escuchado recientemente"
+									href="./homerun.html"
+									>Escuchado recientemente</a
+								>
+							</li>
+							<li class="list-item">
+								<a
+									class="link"
+									title="Tus Me Gusta"
+									href="./blondes-have-more-fun.html"
+									>Tus Me Gusta</a
+								>
+							</li>
+						</ul>
+					</nav>
+					<nav class="list" aria-labelledby="playlist-navigation">
+						<h2 class="list-title" id="playlist-navigation">Playlists</h2>
+						<ul class="list-content">
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Lo mejor de lo mejor"
+										href="./el-tultimo-tour.html"
+										>Lo mejor de lo mejor</a
 									>
-										<i class="icon-search" aria-hidden="true"></i>
-										<input
-											type="search"
-											placeholder="Artistas, canciones o podcasts"
-										/>
-									</form>
-									<button
-										class="profile"
-										aria-label="Ver opciones de la cuenta"
-										role="switch"
-										aria-checked="false"
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Para cantar en la ducha"
+										href="./homerun.html"
+										>Para cantar en la ducha</a
 									>
-										<figure class="profile-photo">
-											<img
-												src="../assets/images/profile.png"
-												alt="Foto del usuario Andres Valdivia"
-												height="28"
-												width="28"
-											/>
-										</figure>
-										<span class="profile-name">Andrés Valdivia Cuzcano</span>
-										<i class="icon-drop"></i>
-										<div class="floatMenu">
-											<ul class="floatMenu-options">
-												<li>
-													<a href="#">
-														<span>Cuenta</span>
-														<i class="icon-external-link"></i>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<span>Perfil</span>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<span>Cámbiate a Premium</span>
-														<i class="icon-external-link"></i>
-													</a>
-												</li>
-												<li>
-													<a href="#">
-														<span>Cerrar sesión</span>
-													</a>
-												</li>
-											</ul>
-										</div>
-									</button>
-								</header>
-							</div>
-						</div>
-						<section class="albumDetails">
-							<div class="albumDetails-block">
-								<figure class="albumDetails-cover">
-									<img
-										src="../assets/images/covers/blondes-have-more-fun.png"
-										height="232"
-										width="232"
-										alt="Cover del album Blondes have more fun"
-									/>
-								</figure>
-							</div>
-							<div class="albumDetails-block">
-								<span>Playlist</span>
-								<h2 class="albumDetails-title">Blondes have more fun</h2>
-								<h3 class="albumDetails-artist">Rod Stewart</h3>
-							</div>
-						</section>
-						<section class="album">
-							<button
-								class="buttonIcon is-primary"
-								aria-label="Reproducir album Blondes have more fun"
-								title="Reproducir album Blondes have more fun"
-							>
-								<i class="icon-play" aria-hidden="true"></i>
-							</button>
-							<div class="albumTop">
-								<div class="albumTop-number">
-									<p>#</p>
-								</div>
-								<div class="albumTop-songDescription">
-									<p>Título</p>
-									<p>Álbum</p>
-									<p class="albumTop-release">Agregado el</p>
-								</div>
-								<div class="albumTop-songDetails">
-									<i class="icon-clock" aria-hidden="true"></i>
-								</div>
-							</div>
-							<div class="album-playlist">
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">Tonight I'm yours</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													Have you ever seen the rain
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													Da ya think I'm sexy?
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													Dirty weekend - 2008 Remaster
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													Ain't love a bitch - 2008 Remaster
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													The best days of my life - 2008 Remaster
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													Is that the thnaks I get? - 2008 Remaster
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													Attractive female wanted - 2008 Remaster
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													Blondes (Have more fun) - 2008 Remaster
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">Last Summer</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">
-													Standing in the shadows of love - 2008 Remaster
-												</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">Scarred and scared</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">Young turks</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">Baby Jane</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-								<article class="albumSong">
-									<div class="albumSong-description">
-										<div class="albumSong-title">
-											<figure class="albumSong-thumbnail">
-												<img
-													src="../assets/images/covers/blondes-have-more-fun.png"
-													height="40"
-													width="40"
-													alt="Cover del album Blondes have more fun"
-												/>
-											</figure>
-											<div class="albumSong-titleName">
-												<h4 class="albumSong-songTitle">One more time</h4>
-												<h5 class="albumSong-artist">Rod Stewart</h5>
-											</div>
-										</div>
-										<h4 class="albumSong-album">Blondes have more fun</h4>
-										<h4 class="albumSong-release">3 de jul. de 2019</h4>
-									</div>
-									<div class="albumSong-details">
-										<p class="albumSong-duration">3:25</p>
-									</div>
-								</article>
-							</div>
-						</section>
-						<main class="page-block"></main>
-					</div>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Sin parar"
+										href="./blondes-have-more-fun.html"
+										>Sin parar</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a class="link" title="Cumbia" href="./el-tultimo-tour.html"
+										>Cumbia</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a class="link" title="Para programar" href="./homerun.html"
+										>Para programar</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Reggaetón duro contra el muro"
+										href="./blondes-have-more-fun.html"
+										>Reggaetón duro contra el muro</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a class="link" title="Music" href="./el-tultimo-tour.html"
+										>Music</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a class="link" title="Rock" href="./homerun.html">Rock</a>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Trips"
+										href="./blondes-have-more-fun.html"
+										>Trips</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Me siento bichote 🔥🥵"
+										href="./el-tultimo-tour.html"
+										>Me siento bichote 🔥🥵</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Reggaetón viejito"
+										href="./homerun.html"
+										>Reggaetón viejito</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Canciones que nunca me dedicarán :'("
+										href="./blondes-have-more-fun.html"
+										>Canciones que nunca me dedicarán :'(</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Temas viejos, pero buenos"
+										href="./el-tultimo-tour.html"
+										>Temas viejos, pero buenos</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Crisis existencial en español"
+										href="./homerun.html"
+										>Crisis existencial en español</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Después de superar la crisis :v"
+										href="./blondes-have-more-fun.html"
+										>Después de superar la crisis :v</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a class="link" title="Mágica" href="./el-tultimo-tour.html"
+										>Mágica</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a class="link" title="La inolvidable" href="./homerun.html"
+										>La inolvidable</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Para sufrir con clase"
+										href="./blondes-have-more-fun.html"
+										>Para sufrir con clase</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a class="link" title="Memories" href="./el-tultimo-tour.html"
+										>Memories</a
+									>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a class="link" title="Disco" href="./homerun.html">Disco</a>
+								</span>
+							</li>
+							<li class="list-item">
+								<span class="ellipsis">
+									<a
+										class="link"
+										title="Descubrimiento semanal"
+										href="./blondes-have-more-fun.html"
+										>Descubrimiento semanal</a
+									>
+								</span>
+							</li>
+						</ul>
+					</nav>
 				</div>
 			</div>
-			<div class="layout-block">
-				<footer class="layout-bottom">
-					<section class="player">
-						<article class="player-nowPlaying">
-							<div class="nowPlaying">
-								<figure class="nowPlaying-cover">
-									<img
-										src="../assets/images/now-playing.png"
-										height="56"
-										width="56"
-										alt="Unforgettable"
-									/>
-								</figure>
-								<div class="nowPlaying-details">
-									<div class="nowPlaying-description">
-										<a class="nowPlaying-title" href="#">Unforgettable</a>
-										<a class="nowPlaying-artist" href="#">Black, Hola beats</a>
-									</div>
-									<div class="nowPlaying-actions">
-										<button
-											class="likeButton"
-											aria-label="Guardar en tu biblioteca"
-											title="Guardar en tu biblioteca"
-											role="switch"
-											aria-checked="false"
-										>
-											<i class="icon-heart-active" aria-hidden="true"></i>
-											<i class="icon-heart" aria-hidden="true"></i>
-										</button>
-										<button
-											class="player-control"
-											aria-label="Activar ventana flotante"
-											title="Activar ventana flotante"
-											role="switch"
-											aria-checked="false"
-										>
-											<i class="icon-minimize" aria-hidden="true"></i>
-										</button>
-									</div>
-								</div>
-							</div>
-						</article>
-						<article class="player-playerControls">
-							<div class="playerControls">
-								<div
-									class="playerControls-buttons"
-									aria-label="Controles de reproduccion"
-								>
-									<button
-										class="buttonIcon"
-										aria-label="Aleatorio"
-										title="Aleatorio"
-									>
-										<i class="icon-shuffle" aria-hidden="true"></i>
-									</button>
-									<button
-										class="buttonIcon"
-										aria-label="Anterior"
-										title="Anterior"
-									>
-										<i class="icon-prev" aria-hidden="true"></i>
-									</button>
-									<button
-										id="play-button"
-										class="buttonIcon is-white"
-										aria-label="Reproducir"
-										title="Reproducir"
-										role="switch"
-										aria-checked="false"
-									>
-										<i class="icon-play" aria-hidden="true"></i>
-									</button>
-									<button
-										class="buttonIcon"
-										aria-label="Siguiente"
-										title="Siguiente"
-									>
-										<i class="icon-next" aria-hidden="true"></i>
-									</button>
-									<button
-										class="buttonIcon"
-										aria-label="Repetir"
-										title="Repetir"
-									>
-										<i class="icon-repeat" aria-hidden="true"></i>
-									</button>
-								</div>
-								<audio
-									id="audio"
-									src="../assets/audio/unforgettable.mp4"
-								></audio>
-								<div class="playerPlayback">
-									<span
-										id="audio-currentTime"
-										class="playerPlayback-progressTime"
-										>00:00</span
-									>
-									<input
-										id="progressBar"
-										class="slider"
-										type="range"
-										min="0"
-										value="0"
-									/>
-									<span id="audio-limit" class="playerPlayback-progressTime"
-										>00:00</span
-									>
-								</div>
-							</div>
-						</article>
-						<article class="player-playerVolume">
-							<div class="playerVolume">
+
+			<div class="page">
+				<div class="sticky">
+					<div class="page-block">
+						<header class="header" aria-label="Barra superior">
+							<div class="navigation">
 								<button
-									id="volume-button"
-									class="player-control"
-									aria-label="Silenciar"
-									aria-describedby="volume-icon"
+									id="prev"
+									class="navigation-prev"
+									aria-label="Volver"
+									title="Volver"
 								>
-									<i
-										id="volume-icon"
-										class="icon-volume-high"
-										role="presentation"
-										aria-label="Volumen alto"
-									></i>
+									<i class="icon-arrow-left" aria-hidden="true"></i>
 								</button>
-								<div class="playerVolume-slider">
-									<input
-										id="volume"
-										class="slider"
-										type="range"
-										min="0"
-										max="100"
-										value="100"
+								<button
+									id="next"
+									class="navigation-next"
+									aria-label="Avanzar"
+									title="Avanzar"
+								>
+									<i class="icon-arrow-right" aria-hidden="true"></i>
+								</button>
+							</div>
+							<form
+								class="search"
+								role="search"
+								aria-label="Buscar por Artistas, canciones o podcasts"
+							>
+								<i class="icon-search" aria-hidden="true"></i>
+								<input
+									type="search"
+									placeholder="Artistas, canciones o podcasts"
+								/>
+							</form>
+							<button
+								class="profile"
+								aria-label="Ver opciones de la cuenta"
+								role="switch"
+								aria-checked="false"
+							>
+								<figure class="profile-photo">
+									<img
+										src="../assets/images/profile.png"
+										alt="Foto del usuario Andres Valdivia"
+										height="28"
+										width="28"
 									/>
+								</figure>
+								<span class="profile-name">Andrés Valdivia Cuzcano</span>
+								<i class="icon-drop"></i>
+								<div class="floatMenu">
+									<ul class="floatMenu-options">
+										<li>
+											<a href="#">
+												<span>Cuenta</span>
+												<i class="icon-external-link"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>Perfil</span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>Cámbiate a Premium</span>
+												<i class="icon-external-link"></i>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span>Cerrar sesión</span>
+											</a>
+										</li>
+									</ul>
 								</div>
+							</button>
+						</header>
+					</div>
+				</div>
+				<section class="albumDetails">
+					<div class="albumDetails-block">
+						<figure class="albumDetails-cover">
+							<img
+								src="../assets/images/covers/blondes-have-more-fun.png"
+								height="232"
+								width="232"
+								alt="Cover del album Blondes have more fun"
+							/>
+						</figure>
+					</div>
+					<div class="albumDetails-block">
+						<span>Playlist</span>
+						<h2 class="albumDetails-title">Blondes have more fun</h2>
+						<h3 class="albumDetails-artist">Rod Stewart</h3>
+					</div>
+				</section>
+				<main class="album">
+					<button
+						class="buttonIcon is-primary"
+						aria-label="Reproducir album Blondes have more fun"
+						title="Reproducir album Blondes have more fun"
+					>
+						<i class="icon-play" aria-hidden="true"></i>
+					</button>
+					<div class="albumTop">
+						<div class="albumTop-number">
+							<p>#</p>
+						</div>
+						<div class="albumTop-songDescription">
+							<p>Título</p>
+							<p>Álbum</p>
+							<p class="albumTop-release">Agregado el</p>
+						</div>
+						<div class="albumTop-songDetails">
+							<i class="icon-clock" aria-hidden="true"></i>
+						</div>
+					</div>
+					<div class="album-playlist">
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">Tonight I'm yours</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
 							</div>
 						</article>
-					</section>
-				</footer>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">
+											Have you ever seen the rain
+										</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">Da ya think I'm sexy?</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">
+											Dirty weekend - 2008 Remaster
+										</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">
+											Ain't love a bitch - 2008 Remaster
+										</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">
+											The best days of my life - 2008 Remaster
+										</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">
+											Is that the thnaks I get? - 2008 Remaster
+										</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">
+											Attractive female wanted - 2008 Remaster
+										</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">
+											Blondes (Have more fun) - 2008 Remaster
+										</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">Last Summer</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">
+											Standing in the shadows of love - 2008 Remaster
+										</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">Scarred and scared</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">Young turks</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">Baby Jane</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+						<article class="albumSong">
+							<div class="albumSong-description">
+								<div class="albumSong-title">
+									<figure class="albumSong-thumbnail">
+										<img
+											src="../assets/images/covers/blondes-have-more-fun.png"
+											height="40"
+											width="40"
+											alt="Cover del album Blondes have more fun"
+										/>
+									</figure>
+									<div class="albumSong-titleName">
+										<h4 class="albumSong-songTitle">One more time</h4>
+										<h5 class="albumSong-artist">Rod Stewart</h5>
+									</div>
+								</div>
+								<h4 class="albumSong-album">Blondes have more fun</h4>
+								<h4 class="albumSong-release">3 de jul. de 2019</h4>
+							</div>
+							<div class="albumSong-details">
+								<p class="albumSong-duration">3:25</p>
+							</div>
+						</article>
+					</div>
+				</main>
 			</div>
+
+			<footer>
+				<section class="player">
+					<article class="player-nowPlaying">
+						<div class="nowPlaying">
+							<figure class="nowPlaying-cover">
+								<img
+									src="../assets/images/now-playing.png"
+									height="56"
+									width="56"
+									alt="Unforgettable"
+								/>
+							</figure>
+							<div class="nowPlaying-details">
+								<div class="nowPlaying-description">
+									<a class="nowPlaying-title" href="#">Unforgettable</a>
+									<a class="nowPlaying-artist" href="#">Black, Hola beats</a>
+								</div>
+								<div class="nowPlaying-actions">
+									<button
+										class="likeButton"
+										aria-label="Guardar en tu biblioteca"
+										title="Guardar en tu biblioteca"
+										role="switch"
+										aria-checked="false"
+									>
+										<i class="icon-heart-active" aria-hidden="true"></i>
+										<i class="icon-heart" aria-hidden="true"></i>
+									</button>
+									<button
+										class="player-control"
+										aria-label="Activar ventana flotante"
+										title="Activar ventana flotante"
+										role="switch"
+										aria-checked="false"
+									>
+										<i class="icon-minimize" aria-hidden="true"></i>
+									</button>
+								</div>
+							</div>
+						</div>
+					</article>
+					<article class="player-playerControls">
+						<div class="playerControls">
+							<div
+								class="playerControls-buttons"
+								aria-label="Controles de reproduccion"
+							>
+								<button
+									class="buttonIcon"
+									aria-label="Aleatorio"
+									title="Aleatorio"
+								>
+									<i class="icon-shuffle" aria-hidden="true"></i>
+								</button>
+								<button
+									class="buttonIcon"
+									aria-label="Anterior"
+									title="Anterior"
+								>
+									<i class="icon-prev" aria-hidden="true"></i>
+								</button>
+								<button
+									id="play-button"
+									class="buttonIcon is-white"
+									aria-label="Reproducir"
+									title="Reproducir"
+									role="switch"
+									aria-checked="false"
+								>
+									<i class="icon-play" aria-hidden="true"></i>
+								</button>
+								<button
+									class="buttonIcon"
+									aria-label="Siguiente"
+									title="Siguiente"
+								>
+									<i class="icon-next" aria-hidden="true"></i>
+								</button>
+								<button class="buttonIcon" aria-label="Repetir" title="Repetir">
+									<i class="icon-repeat" aria-hidden="true"></i>
+								</button>
+							</div>
+							<audio id="audio" src="../assets/audio/unforgettable.mp4"></audio>
+							<div class="playerPlayback">
+								<span id="audio-currentTime" class="playerPlayback-progressTime"
+									>00:00</span
+								>
+								<input
+									id="progressBar"
+									class="slider"
+									type="range"
+									min="0"
+									value="0"
+								/>
+								<span id="audio-limit" class="playerPlayback-progressTime"
+									>00:00</span
+								>
+							</div>
+						</div>
+					</article>
+					<article class="player-playerVolume">
+						<div class="playerVolume">
+							<button
+								id="volume-button"
+								class="player-control"
+								aria-label="Silenciar"
+								aria-describedby="volume-icon"
+							>
+								<i
+									id="volume-icon"
+									class="icon-volume-high"
+									role="presentation"
+									aria-label="Volumen alto"
+								></i>
+							</button>
+							<div class="playerVolume-slider">
+								<input
+									id="volume"
+									class="slider"
+									type="range"
+									min="0"
+									max="100"
+									value="100"
+								/>
+							</div>
+						</div>
+					</article>
+				</section>
+			</footer>
 		</div>
 		<script src="../js/slider.js"></script>
 		<script src="../js/float-menu.js"></script>
