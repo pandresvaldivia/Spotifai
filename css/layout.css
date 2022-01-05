@@ -23,7 +23,7 @@
 
 .layout .page {
 	grid-area: main;
-	/* overflow: auto; */
+	overflow: auto;
 }
 
 .layout footer {
