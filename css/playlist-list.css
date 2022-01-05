@@ -4,14 +4,14 @@
 	gap: 1rem;
 }
 
-.playlistList-wrapContainer {
-	display: flex;
-	gap: 1rem;
-	flex-wrap: wrap;
-}
-
 .playlistList-container > * {
 	flex-shrink: 0;
+}
+
+.playlistList-wrapContainer {
+	display: grid;
+	gap: 1rem;
+	grid-template-columns: repeat(auto-fit, minmax(11.625rem, 1fr));
 }
 
 .playlistList-top {
