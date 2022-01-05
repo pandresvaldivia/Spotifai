@@ -8,7 +8,7 @@
 	flex-shrink: 0;
 }
 
-.playlistList-wrapContainer {
+.playlistList-gridContainer {
 	display: grid;
 	gap: 1rem;
 	grid-template-columns: repeat(auto-fit, minmax(11.625rem, 1fr));

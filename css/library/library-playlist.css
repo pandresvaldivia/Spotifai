@@ -1,19 +1,19 @@
 .libraryPlaylist {
-	inline-size: 378px;
 	background: linear-gradient(149.46deg, #450af5, #8e8ee5 99.16%);
 	border-radius: 0.25rem;
-	-webkit-border-radius: 0.25rem;
-	-moz-border-radius: 0.25rem;
-	-ms-border-radius: 0.25rem;
-	-o-border-radius: 0.25rem;
-	position: relative;
-	cursor: pointer;
-	padding: 1.25rem;
 	box-sizing: border-box;
+	cursor: pointer;
 	display: flex;
 	flex-direction: column;
 	gap: 1.25rem;
 	justify-content: flex-end;
+	padding: 1.25rem;
+	position: relative;
+	grid-column-end: span 2;
+	-moz-border-radius: 0.25rem;
+	-ms-border-radius: 0.25rem;
+	-o-border-radius: 0.25rem;
+	-webkit-border-radius: 0.25rem;
 }
 
 .libraryPlaylist-songs {
