@@ -7,4 +7,5 @@
 	padding-block-start: 1.5rem;
 	block-size: 100%;
 	box-sizing: border-box;
+	overflow: auto;
 }

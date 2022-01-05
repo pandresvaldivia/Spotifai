@@ -7,26 +7,23 @@
 
 .layout {
 	min-inline-size: var(--minInlineSize);
+	display: grid;
+	block-size: 100vh;
+	grid-template-columns: var(--sidebarInlineSize) 1fr;
+	grid-template-rows: 1fr var(--playerSize);
+	grid-template-areas:
+		'sidebar main'
+		'player player';
 }
 
-.layout-block {
-	display: flex;
+.layout .sidebar {
+	grid-area: sidebar;
 }
 
-.layout-sidebar {
-	inline-size: var(--sidebarInlineSize);
-	block-size: calc(100vh - var(--playerSize));
-	min-block-size: var(--minBlockSize);
+.layout .page {
+	grid-area: main;
 }
 
-.layout-main {
-	block-size: calc(100vh - var(--playerSize));
-	overflow: auto;
-	min-block-size: var(--minBlockSize);
-	flex: 1;
-}
-
-.layout-bottom {
-	flex: 1;
-	block-size: var(--playerSize);
+.layout footer {
+	grid-area: player;
 }
