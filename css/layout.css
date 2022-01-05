@@ -9,6 +9,7 @@
 	min-inline-size: var(--minInlineSize);
 	display: grid;
 	block-size: 100vh;
+	overflow-y: hidden;
 	grid-template-columns: var(--sidebarInlineSize) 1fr;
 	grid-template-rows: 1fr var(--playerSize);
 	grid-template-areas:
